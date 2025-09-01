@@ -101,7 +101,7 @@ class syntax_plugin_bootswrapper_modal extends syntax_plugin_bootswrapper_bootst
 
             $html5_attributes = array();
 
-            if (isset($remote)) {
+            if (isset($remote) && $remote > 0) {
                 $html5_attributes['data-remote'] = wl($remote, array('do' => 'export_xhtmlbody'), true);
             }
 
